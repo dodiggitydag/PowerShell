@@ -37,30 +37,11 @@ Get-BibleReferencesOnTopic "Luther Law and Gospel" | Format-Table
 > ...
 
 ## Tasks
-- Does not handle this verse well.  Either the "2" is part of the next Bible verse or the Bible verse is invalid.
-
-	Reference : Phil. 2:5, 2
-	Book      : Phil
-	Chapter   : 2
-	Verses    : 5-2
-	From      : 5
-	To        : 2
-
+- Found an instance where it found "Phil. 2:5, 2".  Either the "2" is part of the next Bible verse or the Bible verse is invalid.
 - Remove overlapping Bible verses, i.e. 2 Cor. 3:6 & 2 Cor. 3:6-9
-	2 Cor. 3:6          2 Cor         3       6     who made us adequate to be servants of a new covenant not based on the letter but on the Spirit, for the letter kills, but the Spirit gives life.                                                                
-	2 Cor. 3:6-9        2 Cor         3             who made us adequate to be servants of a new covenant not based on the letter but on the Spirit, for the letter kills, but the Spirit gives life.  But if the ministry that produced death – carved in letters...
-
 - Change to use Bible Gateway API to enable selection of Bible version
 - Order by actual Bible order
-- Output the scrubbed version of the book names.  See these?  plus sign, capitals, and abbreviations
-
-Reference    Book    Chapter Verses From To
----------    ----    ------- ------ ---- --
-1 Cor. 1:23  1 Cor   1       23     23
-1 PETER 3:15 1 PETER 3       15     15
-John+5:39    John    5       39     39
-John 5:39    John    5       39     39
-Luke 24:27   Luke    24      27     27
+- Output the scrubbed version of the book names: remove plus signs, title case, and expand abbreviations.  Examples 1 Cor. 1:23, 1 PETER 3:15, and John+5:39.
 
 ## Related
 - [Bible.org](http://www.bible.org) - Makers of the NET Bible
