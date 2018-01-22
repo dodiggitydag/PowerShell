@@ -27,14 +27,14 @@ The following command will parse the top ten results on Google for Bible verses 
 Get-BibleReferencesOnTopic "Luther Law and Gospel" | Format-Table
 ```
 
-> Reference           Book          Chapter Verse Text
-> ---------           ----          ------- ----- ----                                                                      
-> 1 Cor. 4:4          1 Cor         4       4     For I am not aware of anything against myself, but I am not acquitted because of this. The one who judges me is the Lord.                                                                                        
-> 1 Corinthians 1:21  1 Corinthians 1       21    For since in the wisdom of God the world by its wisdom did not know God, God was pleased to save those who believe by the foolishness of preaching.                                                              
-> 1 Peter 5:12        1 Peter       5       12    Through Silvanus, whom I know to be a faithful brother, I have written to you briefly, in order to encourage you and testify that this is the true grace of God. Stand fast in it.                               
-> 2 Cor. 3:6-9        2 Cor         3             who made us adequate to be servants of a new covenant not based on the letter but on the Spirit, for the letter kills, but the Spirit gives life.  But if the ministry that produced death – carved in letters...
-> Deuteronomy 26:5-13 Deuteronomy   26            Then you must affirm before the Lord your God, “A wandering Aramean was my ancestor, and he went down to Egypt and lived there as a foreigner with a household few in number, but there he became a great, pow...
-> ...
+| Reference | Book | Chapter | Verse | Text |
+| --------- | ---- | ------- | ----- | ---- |
+|1 Cor. 4:4 | 1 Cor | 4 | 4 | For I am not aware of anything against myself, but I am not acquitted because of this. The one who judges me is the Lord. |
+| 1 Corinthians 1:21 | 1 Corinthians | 1 | 21 | For since in the wisdom of God the world by its wisdom did not know God, God was pleased to save those who believe by the foolishness of preaching.                                                              
+| 1 Peter 5:12 | 1 Peter | 5 | 12 | Through Silvanus, whom I know to be a faithful brother, I have written to you briefly, in order to encourage you and testify that this is the true grace of God. Stand fast in it.                               
+| 2 Cor. 3:6-9 | 2 Cor | 3 | 6 | who made us adequate to be servants of a new covenant not based on the letter but on the Spirit, for the letter kills, but the Spirit gives life.  But if the ministry that produced death – carved in letters...
+| Deuteronomy 26:5-13 | Deuteronomy | 26 | 5 | Then you must affirm before the Lord your God, “A wandering Aramean was my ancestor, and he went down to Egypt and lived there as a foreigner with a household few in number, but there he became a great, pow...|
+
 
 ## Tasks
 - Found an instance where it found "Phil. 2:5, 2".  Either the "2" is part of the next Bible verse or the Bible verse is invalid.
