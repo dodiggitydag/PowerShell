@@ -59,12 +59,12 @@ function Get-BibleVerse {
         .NOTES
             -- Created by --
             Michael West
-            07.23.2013
+            2013-07-23
             http://michaellwest.blogspot.com
 
             -- Extended for a range of verses by --
             Dag Calafell
-            01.19.2018
+            2018-01-19
             https://dynamicsax365trix.blogspot.com
  
         .LINK
@@ -152,6 +152,7 @@ function Get-BibleVerses {
             ---------        ----                                                                                                                                                                                                                                            
             Matthew 22:15-22 Then the Pharisees went out and planned together to entrap him with his own words.  They sent to him their disciples...
             Titus 3:1        Remind them to be subject to rulers and authorities, to be obedient, to be ready for every good work
+	    
         .EXAMPLE
             PS C:\> $v = Read-Host "Verse to look up"
             Get-BibleVerses $v
@@ -161,7 +162,7 @@ function Get-BibleVerses {
             Get-BibleVerses "Matthew 22:15-17
             Titus 3:1" -Formatting SingleString
 
-            Matthew 22:15-22 - Then the Pharisees went out and planned together to entrap him with his own words.  They sent to him their disciples along with the Herodians, saying, “Teacher, we know that you are truthful, and teach the way of God in accordance with the truth. You do not court anyone’s favor because you show no partiality. Tell us then, what do you think? Is it right to pay taxes to Caesar or not?”
+            Matthew 22:15-22 - Then the Pharisees went out and planned together to entrap him with his own words.  They sent to him their disciples along with the Herodians, saying, â€œTeacher, we know that you are truthful, and teach the way of God in accordance with the truth. You do not court anyoneâ€™s favor because you show no partiality. Tell us then, what do you think? Is it right to pay taxes to Caesar or not?â€
 
             Titus 3:1 - Remind them to be subject to rulers and authorities, to be obedient, to be ready for every good work.
 
@@ -171,12 +172,12 @@ function Get-BibleVerses {
             Reference        Book      Chapter Verse Text                                                                                                                                                                                                                    
             ---------        ----      ------- ----- ----                                                                                                                                                                                                                    
             Matthew 22:15-22 Matthew   22            Then the Pharisees went out and planned together to entrap him with his own words.  They sent to him their d...
-            1 Peter 2:13-17  1 Peter   2             Be subject to every human institution for the Lord’s sake, whether to a king as supreme  or to governors as ...
+            1 Peter 2:13-17  1 Peter   2             Be subject to every human institution for the Lordâ€™s sake, whether to a king as supreme  or to governors as ...
             Titus 3:1        Titus     3       1     Remind them to be subject to rulers and authorities, to be obedient, to be ready for every good work.
 
         .NOTES
             Dag Calafell
-            01.19.2018
+            2018-01-19
             https://dynamicsax365trix.blogspot.com
  
         .LINK
@@ -280,7 +281,7 @@ function Get-BibleReferences {
 
         .NOTES
             Dag Calafell
-            01.20.2018
+            2018-01-20
             https://dynamicsax365trix.blogspot.com/
  
         .LINK
@@ -307,22 +308,22 @@ function Get-BibleReferences {
         $fromVerseNum = $groups[3].Value
         $toVerseNum   = $groups[4].Value
 
-        $object = New-Object –TypeName PSObject
-        $object | Add-Member –MemberType NoteProperty –Name Reference –Value $groups[0].Value
-        $object | Add-Member –MemberType NoteProperty –Name Book –Value $book
-        $object | Add-Member –MemberType NoteProperty –Name Chapter –Value $chapter
+        $object = New-Object â€“TypeName PSObject
+        $object | Add-Member â€“MemberType NoteProperty â€“Name Reference â€“Value $groups[0].Value
+        $object | Add-Member â€“MemberType NoteProperty â€“Name Book â€“Value $book
+        $object | Add-Member â€“MemberType NoteProperty â€“Name Chapter â€“Value $chapter
 
         if ($groups[4].Success)
         {
-            $object | Add-Member –MemberType NoteProperty –Name Verses –Value ("{0}-{1}" -f $fromVerseNum, $toVerseNum)
-            $object | Add-Member –MemberType NoteProperty –Name From –Value $fromVerseNum
-            $object | Add-Member –MemberType NoteProperty –Name To –Value $toVerseNum
+            $object | Add-Member â€“MemberType NoteProperty â€“Name Verses â€“Value ("{0}-{1}" -f $fromVerseNum, $toVerseNum)
+            $object | Add-Member â€“MemberType NoteProperty â€“Name From â€“Value $fromVerseNum
+            $object | Add-Member â€“MemberType NoteProperty â€“Name To â€“Value $toVerseNum
         }
         else
         {
-            $object | Add-Member –MemberType NoteProperty –Name Verses –Value $fromVerseNum
-            $object | Add-Member –MemberType NoteProperty –Name From –Value $fromVerseNum
-            $object | Add-Member –MemberType NoteProperty –Name To –Value ""
+            $object | Add-Member â€“MemberType NoteProperty â€“Name Verses â€“Value $fromVerseNum
+            $object | Add-Member â€“MemberType NoteProperty â€“Name From â€“Value $fromVerseNum
+            $object | Add-Member â€“MemberType NoteProperty â€“Name To â€“Value ""
         }
 
         # Return the info
@@ -349,7 +350,7 @@ function Get-InternetSearchUrl {
 
         .NOTES
             Dag Calafell
-            01.20.2018
+            2018-01-20
             https://dynamicsax365trix.blogspot.com/
  
         .LINK
@@ -402,7 +403,7 @@ function Get-BibleReferencesOnTopic {
         .NOTES
             To see all of the urls which are queried, use the -Verbose option.
             Dag Calafell
-            01.20.2018
+            2018-01-20
             https://dynamicsax365trix.blogspot.com/
  
         .LINK
