@@ -65,7 +65,7 @@ function Get-BibleVerse {
             -- Extended for a range of verses by --
             Dag Calafell
             2018-01-19
-            https://dynamicsax365trix.blogspot.com
+            https://www.calafell.me
  
         .LINK
             http://labs.bible.org/api_web_service
@@ -178,11 +178,11 @@ function Get-BibleVerses {
         .NOTES
             Dag Calafell
             2018-01-19
-            https://dynamicsax365trix.blogspot.com
+            https://www.calafell.me
  
         .LINK
             http://labs.bible.org/api_web_service
-            https://dynamicsax365trix.blogspot.com
+            https://www.calafell.me
     #>
     [CmdletBinding(DefaultParameterSetName="Default")]
     param(
@@ -282,10 +282,10 @@ function Get-BibleReferences {
         .NOTES
             Dag Calafell
             2018-01-20
-            https://dynamicsax365trix.blogspot.com/
+            https://www.calafell.me/
  
         .LINK
-            https://dynamicsax365trix.blogspot.com/
+            https://www.calafell.me/
     #>
     [CmdletBinding(DefaultParameterSetName="Default")]
     param(
@@ -351,10 +351,10 @@ function Get-InternetSearchUrl {
         .NOTES
             Dag Calafell
             2018-01-20
-            https://dynamicsax365trix.blogspot.com/
+            https://www.calafell.me/
  
         .LINK
-            https://dynamicsax365trix.blogspot.com/
+            https://www.calafell.me/
     #>
     [CmdletBinding()]
     Param(
@@ -404,10 +404,10 @@ function Get-BibleReferencesOnTopic {
             To see all of the urls which are queried, use the -Verbose option.
             Dag Calafell
             2018-01-20
-            https://dynamicsax365trix.blogspot.com/
+            https://www.calafell.me/
  
         .LINK
-            https://dynamicsax365trix.blogspot.com/
+            https://www.calafell.me/
     #>
     [CmdletBinding()]
     Param(
